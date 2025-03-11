@@ -1,0 +1,43 @@
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  margin: auto;
+  row-gap: 0.5em;
+}
+
+.confirmButton {
+  background-color: #3dbdbc;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.confirmButton:hover {
+  background-color: #34a3a3;
+  transform: scale(1.05);
+}
+
+.confirmButton:active {
+  transform: scale(0.95);
+}
+
+.link {
+  text-decoration: none;
+  color: #797979;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #288f8f;
+}

@@ -1,0 +1,28 @@
+.container {
+  height: 2rem;
+  background-color: #f7f8fa;
+  border-radius: 40px;
+  display: inline-block;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  cursor: default;
+}
+.container > * {
+  margin: 0;
+  padding: 0;
+}
+.container img {
+  grid-row: 1/3;
+}
+.container h2 {
+  font-size: 1rem;
+}
+.container h4 {
+  font-weight: 200;
+  font-size: 0.8rem;
+}

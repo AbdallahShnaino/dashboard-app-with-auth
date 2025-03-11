@@ -1,0 +1,20 @@
+.mainWrapper {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  grid-template-rows: 30px 1fr 20px;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #797979;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #288f8f;
+}

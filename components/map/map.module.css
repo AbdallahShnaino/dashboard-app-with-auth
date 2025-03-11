@@ -1,0 +1,11 @@
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.4rem;
+  border-radius: 30px;
+  background-color: #f7f8fa;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
