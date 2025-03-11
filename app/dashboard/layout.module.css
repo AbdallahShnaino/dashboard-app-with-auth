@@ -1,7 +1,7 @@
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 150px auto;
   grid-template-rows: 70px auto;
   row-gap: 0;
   column-gap: 1.5rem;

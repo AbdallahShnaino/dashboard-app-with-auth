@@ -1,11 +1,24 @@
 .mapContainer {
   width: 100%;
-  height: 100%;
   padding: 1rem 1.4rem;
   border-radius: 30px;
   background-color: #f7f8fa;
+  display: flex;
+  flex-direction: column;
 }
 .map {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 850px) {
+  .mapContainer {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .mapContainer {
+    width: 84%;
+    height: 70%;
+  }
 }

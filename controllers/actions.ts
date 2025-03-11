@@ -20,6 +20,9 @@ const userLogin = async (
     password,
   };
   const result = await login(user);
+  if (result.statusCode == 403) {
+    errors.push("Server Error Please try again later");
+  }
   if (result.statusCode == 404) {
     errors.push("This user not exist on our system");
   }
@@ -52,6 +55,9 @@ const newSignUp = async (
     password,
   };
   const result = await signUp(user);
+  if (result.statusCode == 403) {
+    errors.push("Server Error Please try again later");
+  }
   if (result.statusCode == 400) {
     errors.push(...(Object.values(result.response.error).flat() as string[]));
   }

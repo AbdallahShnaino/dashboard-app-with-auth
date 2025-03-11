@@ -1,0 +1,15 @@
+.textCard {
+  padding: 1rem 1.4rem;
+  border-radius: 30px;
+  background-color: #f7f8fa;
+  overflow: hidden;
+}
+.textCard p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #797979;
+}
+.textCard h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}

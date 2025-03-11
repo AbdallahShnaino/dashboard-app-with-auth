@@ -7,14 +7,6 @@ import HeaderSearch from "../headerSearch/headerSearch";
 import Notify from "../notify/notify";
 
 export default function Header() {
-  /* 
-
-  const handleLangChange = (event) => {
-    const selected = languages.find((lang) => lang.code === event.target.value);
-    setSelectedLang(selected);
-  };
-*/
-
   return (
     <header className={classes.header}>
       <Image
@@ -24,7 +16,19 @@ export default function Header() {
         alt="Dashboard logo"
         src="/logo.svg"
       />
-      <HeaderSearch />
+      <div className={classes.search}>
+        <HeaderSearch />
+      </div>
+      <div className={classes.searchIcon}>
+        <Image
+          className={classes.searchIcon}
+          src="/icons/search.svg"
+          alt="Search"
+          width={26}
+          height={26}
+        />{" "}
+      </div>
+
       <SelectLang />
       <Notify />
       <Profile />

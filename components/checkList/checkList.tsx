@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import classes from "./checkList.module.css"; // Import CSS file
+import classes from "./checkList.module.css";
 import Image from "next/image";
 
 export default function CheckList() {
@@ -18,11 +18,10 @@ export default function CheckList() {
   ]);
 
   const handleClick = (index: number) => {
-    const newBtnState = [...btnState];
-    newBtnState[index] = {
-      ...newBtnState[index],
-      status: !newBtnState[index].status,
-    };
+    const newBtnState = btnState.map((item, idx) => ({
+      ...item,
+      status: idx === index ? true : false,
+    }));
     setBtnState(newBtnState);
   };
 
