@@ -5,6 +5,9 @@
   background-color: #fff;
   justify-content: space-between;
 }
+.searchIcon {
+  display: none;
+}
 @media (max-width: 850px) {
   .header {
     padding: 4px 7px;
@@ -14,13 +17,11 @@
     height: 40px;
   }
 }
-.searchIcon {
-  display: none;
-}
+
 @media (max-width: 500px) {
   .header {
     padding: 6px 6px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .header .logo {
     display: none;

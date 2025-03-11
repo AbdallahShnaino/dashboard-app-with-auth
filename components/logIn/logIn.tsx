@@ -4,6 +4,7 @@ import React, { useActionState } from "react";
 import classes from "./logIn.module.css";
 import Submit from "./submit";
 import { userLogin } from "@/controllers/actions";
+import Popup from "../popup/popuo";
 
 export default function LogInForm() {
   const [state, formAction] = useActionState(userLogin, {
@@ -36,10 +37,17 @@ export default function LogInForm() {
       </div>
 
       <ul className={classes.errors}>
-        {state.errors.map((err) => (
-          <li key={err}>{err}</li>
-        ))}
+        {state.errors.map((err, index) =>
+          err === "This user not exist on our system" ? (
+            <React.Fragment key={index}>
+              <Popup />
+            </React.Fragment>
+          ) : (
+            <li key={index}>{err}</li>
+          )
+        )}
       </ul>
+
       <div className={classes.formGroup}>
         <Submit />
       </div>
