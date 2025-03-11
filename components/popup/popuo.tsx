@@ -2,11 +2,10 @@
 
 import React, { useEffect } from "react";
 import Swal from "sweetalert2";
-import styles from "./popup.module.css"; // Import your CSS module file
+import styles from "./popup.module.css";
 import { redirect } from "next/navigation";
 
 const Popup = () => {
-  // Show the SweetAlert2 popup when the component mounts
   useEffect(() => {
     Swal.fire(
       "Oh Your not registered with us",
@@ -14,7 +13,7 @@ const Popup = () => {
       "error"
     ).then((result) => {
       if (result.isConfirmed) {
-        redirect('/sign-up')
+        redirect("/sign-up");
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         console.log("User canceled the action.");
       }
@@ -23,8 +22,7 @@ const Popup = () => {
 
   return (
     <div className={styles["popup-container"]}>
-      <h1>Your content here</h1>
-      {/* Additional content or styles */}
+      <h1></h1>
     </div>
   );
 };
