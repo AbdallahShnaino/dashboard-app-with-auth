@@ -8,6 +8,7 @@ export function middleware(req: NextRequest) {
     pathname.startsWith("/static/") ||
     pathname.startsWith("/icons/") ||
     pathname === "/login" ||
+    pathname === "/sign-up" ||
     pathname.includes(".")
   ) {
     return NextResponse.next();
@@ -15,13 +16,10 @@ export function middleware(req: NextRequest) {
 
   const userCookie = req.cookies.get("session-key"); // Replace with your actual cookie name
 
-  /*
   if (!userCookie) {
     return NextResponse.redirect(new URL("/login", req.url));
   }
 
-
-*/
   return NextResponse.next();
 }
 
