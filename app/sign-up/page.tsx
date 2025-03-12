@@ -12,7 +12,7 @@ export default function SignUpScreen() {
         <Link className={classes.link} href={"/login"}>
           Login Here
         </Link>
-      </span>{" "}
+      </span>
     </section>
   );
 }

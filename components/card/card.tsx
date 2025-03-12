@@ -8,7 +8,6 @@ export default function Card() {
       <h3>Tran & Sorelle</h3>
       <div>
         <Image src="/icons/star.svg" alt="SVG Image" width={22} height={22} />
-
         <p>4.5 Rating</p>
       </div>
     </div>

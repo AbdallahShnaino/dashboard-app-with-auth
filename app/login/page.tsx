@@ -7,7 +7,7 @@ export default function LoginScreen() {
       <h2>Login Screen</h2>
       <LogInForm />
       <span>
-        Don't Have an Account?{" "}
+        Don't Have an Account?
         <Link className={classes.link} href={"/sign-up"}>
           Sign Up Here
         </Link>
